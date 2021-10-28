@@ -10,6 +10,8 @@ class Student extends Model
 {
     use HasFactory, HasApiTokens;
 
+    protected $fillable = ['username', 'password', 'full_name', 'grade'];
+
     protected $hidden = ['password'];
 
     public function periods()

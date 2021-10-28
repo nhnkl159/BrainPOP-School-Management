@@ -9,6 +9,8 @@ class Period extends Model
 {
     use HasFactory;
 
+    protected $fillable = ['teacher_id', 'name'];
+
     //Get period teacher.
     public function teacher()
     {
